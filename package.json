@@ -1,0 +1,25 @@
+{
+  "name": "resume",
+  "version": "0.1.1",
+  "description": "Personal resume and portfolio website with version-tracked resume management",
+  "type": "module",
+  "scripts": {
+    "generate-pdf": "tsx scripts/generate-pdf.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "resume",
+    "portfolio",
+    "pdf-generation"
+  ],
+  "author": "Patrick Michaelsen",
+  "license": "All Rights Reserved",
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "md-to-pdf": "^5.2.5"
+  }
+}
