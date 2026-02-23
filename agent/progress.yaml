@@ -3,10 +3,10 @@
 
 project:
   name: resume
-  version: 0.1.0
+  version: 0.1.1
   started: 2026-02-23
   status: in_progress
-  current_milestone: M1
+  current_milestone: M2
   description: |
     Personal resume and portfolio website with version-tracked resume management,
     PDF generation, and React/Vite deployment to GitHub Pages
@@ -23,6 +23,66 @@ milestones:
     tasks_total: 1
     notes: |
       Established project foundation with TypeScript scripts pattern and PDF generation capability
+  
+  - id: M2
+    name: Vite + React Project Setup
+    status: not_started
+    progress: 0
+    started: null
+    completed: null
+    estimated_weeks: 0.3
+    tasks_completed: 0
+    tasks_total: 3
+    notes: |
+      Set up Vite + React project structure with routing and basic navigation
+  
+  - id: M3
+    name: Hero Landing Page
+    status: not_started
+    progress: 0
+    started: null
+    completed: null
+    estimated_weeks: 0.5
+    tasks_completed: 0
+    tasks_total: 3
+    notes: |
+      Implement modern hero landing page with gradients, animations, and visual appeal
+  
+  - id: M4
+    name: Portfolio Page with Fuzzy Search
+    status: not_started
+    progress: 0
+    started: null
+    completed: null
+    estimated_weeks: 0.5
+    tasks_completed: 0
+    tasks_total: 4
+    notes: |
+      Build portfolio page with card grid layout and fuzzy search filtering
+  
+  - id: M5
+    name: CV Page with Fuzzy Search
+    status: not_started
+    progress: 0
+    started: null
+    completed: null
+    estimated_weeks: 0.5
+    tasks_completed: 0
+    tasks_total: 4
+    notes: |
+      Build CV page with experience timeline and fuzzy search filtering
+  
+  - id: M6
+    name: Polish and Deployment
+    status: not_started
+    progress: 0
+    started: null
+    completed: null
+    estimated_weeks: 0.3
+    tasks_completed: 0
+    tasks_total: 3
+    notes: |
+      Add final polish, optimize performance, and deploy to patrickmichaelsen.com
 
 tasks:
   milestone_1:
@@ -36,16 +96,146 @@ tasks:
       notes: |
         Established TypeScript scripts pattern using npx tsx and implemented PDF generation from markdown using jsPDF + marked
 
+tasks:
+  milestone_2:
+    - id: task-2
+      name: Initialize Vite + React project
+      status: not_started
+      file: agent/tasks/task-2-initialize-vite-react.md
+      estimated_hours: 1-2
+      actual_hours: null
+      completed_date: null
+    - id: task-3
+      name: Configure React Router and create page placeholders
+      status: not_started
+      file: agent/tasks/task-3-configure-routing.md
+      estimated_hours: 1-2
+      actual_hours: null
+      completed_date: null
+    - id: task-4
+      name: Implement responsive navigation
+      status: not_started
+      file: agent/tasks/task-4-responsive-navigation.md
+      estimated_hours: 2-3
+      actual_hours: null
+      completed_date: null
+  
+  milestone_3:
+    - id: task-5
+      name: Implement Hero component with gradient background
+      status: not_started
+      file: agent/tasks/task-5-hero-component.md
+      estimated_hours: 2-3
+      actual_hours: null
+      completed_date: null
+    - id: task-6
+      name: Add CSS animations
+      status: not_started
+      file: agent/tasks/task-6-css-animations.md
+      estimated_hours: 2-3
+      actual_hours: null
+      completed_date: null
+    - id: task-7
+      name: Make hero responsive
+      status: not_started
+      file: agent/tasks/task-7-hero-responsive.md
+      estimated_hours: 1-2
+      actual_hours: null
+      completed_date: null
+  
+  milestone_4:
+    - id: task-8
+      name: Create portfolio data structure and sample data
+      status: not_started
+      file: agent/tasks/task-8-portfolio-data.md
+      estimated_hours: 1-2
+      actual_hours: null
+      completed_date: null
+    - id: task-9
+      name: Implement PortfolioCard component
+      status: not_started
+      file: agent/tasks/task-9-portfolio-card.md
+      estimated_hours: 2-3
+      actual_hours: null
+      completed_date: null
+    - id: task-10
+      name: Implement fuzzy search with Fuse.js
+      status: not_started
+      file: agent/tasks/task-10-fuzzy-search.md
+      estimated_hours: 2-3
+      actual_hours: null
+      completed_date: null
+    - id: task-11
+      name: Build responsive card grid layout
+      status: not_started
+      file: agent/tasks/task-11-card-grid.md
+      estimated_hours: 1-2
+      actual_hours: null
+      completed_date: null
+  
+  milestone_5:
+    - id: task-12
+      name: Create CV data structure and parse from markdown
+      status: not_started
+      file: agent/tasks/task-12-cv-data.md
+      estimated_hours: 2-3
+      actual_hours: null
+      completed_date: null
+    - id: task-13
+      name: Implement CvEntry component with timeline
+      status: not_started
+      file: agent/tasks/task-13-cv-entry.md
+      estimated_hours: 2-3
+      actual_hours: null
+      completed_date: null
+    - id: task-14
+      name: Implement fuzzy search for CV entries
+      status: not_started
+      file: agent/tasks/task-14-cv-search.md
+      estimated_hours: 1-2
+      actual_hours: null
+      completed_date: null
+    - id: task-15
+      name: Add PDF download functionality
+      status: not_started
+      file: agent/tasks/task-15-pdf-download.md
+      estimated_hours: 1
+      actual_hours: null
+      completed_date: null
+  
+  milestone_6:
+    - id: task-16
+      name: Optimize bundle size and add code splitting
+      status: not_started
+      file: agent/tasks/task-16-optimize-bundle.md
+      estimated_hours: 2-3
+      actual_hours: null
+      completed_date: null
+    - id: task-17
+      name: Add accessibility improvements and meta tags
+      status: not_started
+      file: agent/tasks/task-17-accessibility-seo.md
+      estimated_hours: 2-3
+      actual_hours: null
+      completed_date: null
+    - id: task-18
+      name: Deploy to Cloudflare Pages and configure domain
+      status: not_started
+      file: agent/tasks/task-18-deploy-cloudflare.md
+      estimated_hours: 1-2
+      actual_hours: null
+      completed_date: null
+
 documentation:
-  design_documents: 0
-  milestone_documents: 0
+  design_documents: 2
+  milestone_documents: 6
   pattern_documents: 1
-  task_documents: 1
+  task_documents: 18
 
 progress:
-  planning: 10
-  implementation: 100
-  overall: 100
+  planning: 100
+  implementation: 6
+  overall: 12
 
 recent_work:
   - date: 2026-02-23
@@ -74,10 +264,10 @@ recent_work:
       - ✅ Completed Milestone 1: Project Foundation & Core Utilities (100%)
 
 next_steps:
-  - Plan next milestone for React + Vite application
-  - Create design documents for web application architecture
-  - Set up React + Vite project structure
-  - Implement resume display components
+  - Start Milestone 2: Vite + React Project Setup
+  - Run @acp.proceed to begin Task 2 (Initialize Vite + React project)
+  - Review milestone and task documents
+  - Begin implementation of portfolio website
 
 notes:
   - Web app with React + Vite + TypeScript
