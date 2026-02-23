@@ -49,8 +49,34 @@ resume/
 - **Frontend**: React + Vite + TypeScript
 - **Routing**: React Router
 - **Styling**: [TBD]
-- **PDF Generation**: [TBD]
+- **PDF Generation**: jsPDF + marked (TypeScript scripts)
 - **Deployment**: GitHub Pages
+
+## PDF Generation
+
+Generate PDF from markdown resume:
+
+```bash
+npx tsx scripts/generate-pdf.ts <path-to-md> [--title "Title"] [--output "filename.pdf"]
+```
+
+**Example**:
+```bash
+npx tsx scripts/generate-pdf.ts resources/resumes/resume_2026-02-23.md --title "Patrick_Michaelsen_Resume"
+```
+
+**Output**: PDF saved to `artifacts/` directory
+
+**Arguments**:
+- `<path-to-md>`: Path to markdown file (required)
+- `--title "Title"`: Custom title for PDF filename (optional, defaults to filename)
+- `--output "filename.pdf"`: Custom output filename (optional, defaults to title.pdf)
+
+## Scripts
+
+This project uses TypeScript scripts with `npx tsx` for utility automation. Scripts are located in the `scripts/` directory with their own `package.json` and `tsconfig.json`.
+
+See [`agent/patterns/typescript-scripts-pattern.md`](agent/patterns/typescript-scripts-pattern.md) for the complete pattern documentation.
 
 ## Getting Started
 
