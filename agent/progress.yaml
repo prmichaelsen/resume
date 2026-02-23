@@ -26,12 +26,12 @@ milestones:
   
   - id: M2
     name: Vite + React Project Setup
-    status: not_started
-    progress: 0
-    started: null
+    status: in_progress
+    progress: 33
+    started: 2026-02-23
     completed: null
     estimated_weeks: 0.3
-    tasks_completed: 0
+    tasks_completed: 1
     tasks_total: 3
     notes: |
       Set up Vite + React project structure with routing and basic navigation

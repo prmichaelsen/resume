@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-02-23
+
+### Added
+- Vite + React + TypeScript application setup
+- React Router with 3 routes (Home, Portfolio, CV)
+- Responsive navigation component (desktop navbar + mobile hamburger menu)
+- Layout component with navigation wrapper
+- Placeholder pages for Home, Portfolio, and CV
+- Theme CSS variables (blues and purples color scheme)
+- Global styles and navigation styles
+
 ## [0.1.1] - 2026-02-23
 
 ### Fixed

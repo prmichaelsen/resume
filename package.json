@@ -1,9 +1,12 @@
 {
   "name": "resume",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Personal resume and portfolio website with version-tracked resume management",
   "type": "module",
   "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
     "generate-pdf": "tsx scripts/generate-pdf.ts",
     "typecheck": "tsc --noEmit"
   },
@@ -16,10 +19,17 @@
   "license": "All Rights Reserved",
   "devDependencies": {
     "@types/node": "^25.3.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.4",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
   },
   "dependencies": {
-    "md-to-pdf": "^5.2.5"
+    "md-to-pdf": "^5.2.5",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.1"
   }
 }
